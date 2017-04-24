@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sensor data</title>
+    <!-- EXTERNAL LIBS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://www.google.com/jsapi"></script>
+
+    <!-- EXAMPLE SCRIPT -->
+    <script>
+
+      // onload callback
+      function drawChart() {
+
+        var cloud_url = 'https://data.sparkfun.com/output/';
+        // Public Key from https://data.sparkfun.com
+        var public_key = 'q52W39yK28tQ0ZX4XDgb';
+
+        // JSONP request
+        var jsonData = $.ajax({
+          url:  cloud_url + public_key + '.json',
+          data: {page: 1},
+          dataType: 'jsonp',
+        }).done(function (results) {
+          var latest = results[0];
+          var gauge = new google.visualization.Gauge($('#gauge').get(0));
+          var gaugeData = google.visualization.arrayToDataTable([
+            ['Label', 'Value'],
+            ['Temp', 20],
+            ['Humidity', 20]
+          ]);
+          var options = {
+            width: 600,
+			animation:{
+			duration: 3000,
+			easing: 'inAndOut',
+			},
+			min:20,
+			max:75,
+            redFrom: 50, redTo: 61,
+            greenFrom: 61, greenTo: 70,
+			yellowFrom: 70, yellowTo: 75,
+          };
+
+          // For animation purpose only
+          gauge.draw(gaugeData,options);
+
+          // Show real data
+          gaugeData.setValue(0,1,parseFloat(latest.t0));
+          gaugeData.setValue(1,1,parseFloat(latest.h0));
+
+          gauge.draw(gaugeData,options);
+
+          var data = new google.visualization.DataTable();
+
+          data.addColumn('datetime', 'Time');
+          data.addColumn('number', 'Temp');
+          data.addColumn('number', 'Humidity');
+
+          $.each(results, function (i, row) {
+            data.addRow([
+              (new Date(row.timestamp)),
+              parseFloat(row.t0),
+              parseFloat(row.h0),
+            ]);
+          });
+
+          var chart = new google.visualization.LineChart($('#temperature').get(0));
+          chart.draw(data, {
+            title: 'Wireless thermoigrometer'
+          });
+
+        });
+      }
+
+      // load chart lib
+      google.load('visualization', '1', {
+        packages: ['corechart','gauge']
+      });
+
+      // call drawChart once google charts is loaded
+      google.setOnLoadCallback(drawChart);
+    </script>
+
+  </head>
+  <body style="text-align:center">
+    <h1>smart thermoigrometer</h1>
+    <h2>refresh to update</h2>
+    <div id="gauge" style="width:600px;margin-left:auto;margin-right:auto"></div>
+    <div id="temperature" style="width: 100%;"></div>
+  </body>
+</html>
