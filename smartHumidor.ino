@@ -32,7 +32,7 @@
     // Sensors parameters
     const int INTERVAL = 60000;       // [ms] delay between readings
     //dht22
-    const int DHTpin[] =    {1,2,4};  // add/remove sensors by pin
+    const int DHTpin[] =    {1,2,4};  // add/remove sensors by pin (quicker than declaring one by one)
     const float offsetT[] = {0,0,0};  // temperature offsets
     const float offsetH[] = {5,5,1};  // humidity offsets
 
