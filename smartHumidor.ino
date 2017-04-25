@@ -27,10 +27,12 @@
     #include <DHT.h>
     #include <SSD1306.h> 
    
+    // PARAMETERS
+
     // Sensors parameters
     const int INTERVAL = 60000;       // [ms] delay between readings
     //dht22
-    const int DHTpin[] =    {1,2,4};  // add/remove sensors by pin (quickier than declaring one by one)
+    const int DHTpin[] =    {1,2,4};  // add/remove sensors by pin
     const float offsetT[] = {0,0,0};  // temperature offsets
     const float offsetH[] = {5,5,1};  // humidity offsets
 
@@ -53,6 +55,12 @@
     // ThingSpeak account
     const String tsWriteKey = "";
 
+    // OLED Data
+    //SSD1306  display(0x3c, 1, 3);   // ADDRESS, SDA, SDC
+    SSD1306 oled(0x3C, 13, 12);
+
+    // PROGRAM CODE
+
     // Sensors data
     const int maxSensors = (sizeof(DHTpin)/sizeof(int));
     DHT *myDHT[maxSensors];
@@ -61,10 +69,6 @@
     // averages
     float avgTemp;
     float avgHumi;
-
-    // OLED Data
-    //SSD1306  display(0x3c, 1, 3);   // ADDRESS, SDA, SDC
-    SSD1306 oled(0x3C, 13, 12);
 
     // START
     void setup()
