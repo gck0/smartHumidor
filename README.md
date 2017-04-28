@@ -148,25 +148,20 @@ Potrà inoltre visualizzare temperatura/umidità e altri dati su uno schermo a l
 Sia la rappresentazione dati sullo schermo a led, che le interfacce per visualizzare i dati da internet sono ancora molto rozze e servono solo ai fini di <i>testing</i>..
 Per adesso l'aspetto attuale dei nostri termoigrometri digitali è pressapoco il seguente
 
-display oled:
-<IMG src=http://i67.tinypic.com/10z1x61.jpg></IMG>
+display oled:  
+<IMG src=http://i67.tinypic.com/10z1x61.jpg></IMG>  
+google charts:  
+<IMG src=http://i66.tinypic.com/2z8ak9x.jpg></IMG>  
+servizi iot:  
+<IMG src=http://i63.tinypic.com/2hnw3h5.png></IMG>  
+<IMG src=http://i68.tinypic.com/2wptdtg.png></IMG>  
+<IMG src=http://i66.tinypic.com/keezac.png></IMG>  
 
-google charts:
-<IMG src=http://i66.tinypic.com/2z8ak9x.jpg></IMG>
-
-servizi iot:
-<IMG src=http://i63.tinypic.com/2hnw3h5.png></IMG>
-
-<IMG src=http://i68.tinypic.com/2wptdtg.png></IMG>
-
-<IMG src=http://i66.tinypic.com/keezac.png></IMG>
-
-
-<b>Idee ulteriori:</b>
-<i>controllo luci
-piccola app android per lettura in tempo reale di valori, grafici e storico (androidplot)
-input per l'utente (bottoni, switch, tasti a sfioramento)
-sensori per apertura/chiusura e relativi trigger</i>
+<b>Idee ulteriori:</b>  
+<i>controllo luci  
+piccola app android per lettura in tempo reale di valori, grafici e storico (androidplot)  
+input per l'utente (bottoni, switch, tasti a sfioramento)  
+sensori per apertura/chiusura e relativi trigger</i>  
 
 
 <b>DATI SENSORI IN TEMPO REALE</b>
