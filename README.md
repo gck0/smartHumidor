@@ -1,4 +1,4 @@
-<b>concept</b>: un progetto per la conversione di una cantinetta vini in humidor per la conservazione di sigari con caratteristiche tipicamente smart, partito come post per il forum 'Accademia del Fumo Lento'
+<b>concept</b>: un progetto per la conversione di una cantinetta vini in humidor per la conservazione di sigari con caratteristiche tipicamente smart, partito con un post sul forum 'Accademia del Fumo Lento'
 
 # smartHumidor
 
