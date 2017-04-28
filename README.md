@@ -167,7 +167,7 @@ sensori per apertura/chiusura e relativi trigger</i>
 <b>DATI SENSORI IN TEMPO REALE</b>
 
 html da salvare con google charts:  
-https://raw.githubusercontent.com/gck0/smartHumidor/master/plotting/plotting.html  
+https://github.com/gck0/smartHumidor/tree/master/plotting  
 sparkfun dati plot friendly:  
 https://data.sparkfun.com/streams/q52W39yK28tQ0ZX4XDgb  
 plot con analog.io:  
