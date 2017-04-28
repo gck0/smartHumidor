@@ -1,4 +1,4 @@
-<b>concept</b>: un progetto per la conversione di una cantinetta vini in humidor per la conservazione di sigari con caratteristiche tipicamente smart, per il forum 'Accademia del Fumo Lento'.
+<b>concept</b>: un progetto per la conversione di una cantinetta vini in humidor per la conservazione di sigari con caratteristiche tipicamente smart, per il forum 'Accademia del Fumo Lento'
 
 # smartHumidor
 
@@ -35,15 +35,14 @@ Questo è l'aspetto di una tipica cantinetta vini:
 
 <IMG src=http://i68.tinypic.com/msbuia.jpg></IMG>
 
-Nella parte posteriore della cantinetta c'è il circuito che comprende i componenti necessari per l'alimentazione, per aprirlo basta rimuovere la copertura di alluminio.
+Nella parte posteriore della cantinetta c'è il circuito che comprende i componenti necessari per l'alimentazione, per aprirlo basta rimuovere la copertura di alluminio.  
 Nella seconda foto si evince come una classica <i>development board</i> può stare tranquillamente nell'alloggiamento. Vi sono delle piccole aperture per far passare i fili, che possono essere riutilizzati o estratti per far passare i nostri cavi.
 
 <IMG src=http://i67.tinypic.com/28v3hac.jpg></IMG> <IMG src=http://i68.tinypic.com/w6r57c.jpg></IMG>
 
 La ventola grande, agganciata al dissipatore in alluminio, si trova nella maggior parte delle cantinette e serve per raffreddare il calore generato dal meccanismo di controllo della temperatura interna (lato opposto cella di Peltier o gas) e potrà servirci per raffreddare la circuiteria della nostra scheda prototipale, ma non è fondamentale o cruciale per il progetto perchè i componenti della nostra scheda difficilmente raggiungeranno temperature critiche.
 
-Nella parte anteriore, invece, la maggior parte delle cantinette sono dotate di pulsanti a sfioramento e di un piccolo display a led.
-Il tutto è montato su un unico pcb facile da estrarre, basta spostare la guarnizione in gomma nella parte interna dello sportello della cantinetta e svitare le due viti per aver accesso all'alloggiamento interno:
+Nella parte anteriore, invece, la maggior parte delle cantinette sono dotate di pulsanti a sfioramento e di un piccolo display a led. Il tutto è montato su un unico pcb facile da estrarre, basta spostare la guarnizione in gomma nella parte interna dello sportello della cantinetta e svitare le due viti per aver accesso all'alloggiamento interno:
 
 <IMG src=http://i63.tinypic.com/2m63mkh.jpg></IMG>
 
@@ -51,8 +50,8 @@ Dopo aver staccato i connettori, si avrà accesso a un'intercapedine, dove sarà
 
 <IMG src=http://i68.tinypic.com/6epz0w.jpg></IMG>
 
-Guardando il circuito, si nota che il piccolo display ha dimensioni molto simili a un oled 128x64 e può essere quindi sostituito con un nostro componente (questa considerazione ci servirà in seguito).
-Con un po' di accortezza, andranno staccati i tutti i connettori il circuito rimosso, per liberare spazio.
+Guardando il circuito, si nota che il piccolo display ha dimensioni molto simili a un oled 128x64 e può essere quindi sostituito con un nostro componente (questa considerazione ci servirà in seguito).  
+Con un po' di accortezza, andranno staccati i tutti i connettori il circuito rimosso, per liberare spazio.  
 A lavoro finito, ci ritroveremo con un connettore <i>floating</i>, che può essere sganciato dai singoli fili con la punta di un piccolo cacciavite (per allentare il meccanismo di blocco dei cavi) e facendo un po' di forza per tirarli fuori:
 
 <IMG src=http://i66.tinypic.com/afbx2w.jpg></IMG>
@@ -172,18 +171,13 @@ sensori per apertura/chiusura e relativi trigger</i>
 
 <b>DATI SENSORI IN TEMPO REALE</b>
 
-html da salvare con google charts:
-
-https://raw.githubusercontent.com/gck0/smartHumidor/master/plotting/plotting.html
-sparkfun dati plot friendly:
-
-https://data.sparkfun.com/streams/q52W39yK28tQ0ZX4XDgb
-plot con analog.io:
-
-http://analog.io/s72N
-plot con thingspeak:
-
-http://thingspeak.com/channels/111354
-
-oppure:
+html da salvare con google charts:  
+https://raw.githubusercontent.com/gck0/smartHumidor/master/plotting/plotting.html  
+sparkfun dati plot friendly:  
+https://data.sparkfun.com/streams/q52W39yK28tQ0ZX4XDgb  
+plot con analog.io:  
+http://analog.io/s72N  
+plot con thingspeak:  
+http://thingspeak.com/channels/111354  
+oppure:  
 <IMG src=http://i68.tinypic.com/azb7u0.png></IMG>
