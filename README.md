@@ -161,7 +161,8 @@ servizi iot:
 <i>controllo luci  
 piccola app android per lettura in tempo reale di valori, grafici e storico (androidplot)  
 input per l'utente (bottoni, switch, tasti a sfioramento)  
-sensori per apertura/chiusura e relativi trigger</i>  
+sensori per apertura/chiusura e relativi trigger
+e-mail al proprietario in date condizioni</i>  
 
 
 <b>DATI SENSORI IN TEMPO REALE</b>
